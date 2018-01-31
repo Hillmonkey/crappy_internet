@@ -34,4 +34,4 @@ TASK LIST FOR CRAPPY INTERNET APP
   * MVP 0.3 (make the service run locally)
     * Locally running database
     * Locally served webpage with statistics
-    * Question: How hard is it to transition to proprietary AWS products?
+    * QUESTION: How hard is it to transition to proprietary AWS products?
