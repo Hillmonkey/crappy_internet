@@ -16,7 +16,7 @@ TASK LIST FOR CRAPPY INTERNET APP
   * MVP 0.2 (this MVP goal might be considered optional)
     * There is a python package that turns your program into a CLI command
 
-  * Research: Easy to use time-seriesd database
+  * Research: Easy to use time-series database
     * Graphite
     * InfluxDb
     * QUESTION: How hard is it to a proprietary AWS database?
@@ -35,3 +35,7 @@ TASK LIST FOR CRAPPY INTERNET APP
     * Locally running database
     * Locally served webpage with statistics
     * QUESTION: How hard is it to transition to proprietary AWS products?
+
+  * MVP 0.4
+    * Migrate website to Amazon
+    * Maybe database need to migrate at the same time ...
