@@ -1,5 +1,9 @@
 TASK LIST FOR CRAPPY INTERNET APP
 
+* Guillaume's suggestions:
+  * focus first on Raspberry Pi implementation
+  * instead of pinging out from device, "ping into" from remote location
+
 * Before Initial Presentation
   * Research Domain Name
     * ConnectTest?
