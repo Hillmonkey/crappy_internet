@@ -17,3 +17,16 @@
 * Complete payment on OVH server
 * Follow Guide to secure the server
 * Try setting up DigitalOcean server, due to hardship @ OVH
+
+# Mon Feb 5
+
+* Go to Dev Hiring Mixer
+* ssh working on DigitalOcean server
+* PingPi v1 is now ready to run on DigitalOcean droplet
+
+# Tue Feb 6
+
+* Trying different solutions to run a lightweight python based server on RaspPi
+* Help friend with coding in C
+* Found a workable python based server
+* set and lost my password! used System Rescue CD to change my password
