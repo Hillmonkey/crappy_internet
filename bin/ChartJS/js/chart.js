@@ -1,3 +1,4 @@
+
 const CHART = document.getElementById("myChart");
 console.log(CHART);
 let lineChart = new Chart(CHART, {
@@ -9,8 +10,6 @@ let lineChart = new Chart(CHART, {
              "29", "28", "27", "26", "25", "24", "23", "22", "21", "20",
              "19", "18", "17", "16", "15", "14", "13", "12", "11", "10",
              "09", "08", "07", "06", "05", "04", "03", "02", "01", "00"],
-
-    // labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
     datasets: [{
       label: "Internet Connectivity, 60 Second Resolution",
       fill: false,
@@ -37,10 +36,35 @@ let lineChart = new Chart(CHART, {
     }]
   },
   options: {
+    legend: {
+      display: true,
+      position: 'top',
+      labels: {
+        boxWidth: 80,
+        fontColor: 'black'
+      }
+    },
     scales: {
+      xAxes: [{
+        gridLines: {
+          display: true,
+          // color: "black"
+        },
+        scaleLabel: {
+          display: true,
+          labelString: "Minutes Ago",
+          // fontColor: "red"
+        }
+      }],
       yAxes: [{
-        ticks:  {
-          beginAtZero: true
+        gridLines: {
+          // color: "black",
+          // borderDash: [2, 5],
+        },
+        scaleLabel: {
+          display: true,
+          labelString: "1 = Connected, 0 = No Connection",
+          // fontColor: "green"
         }
       }]
     }
