@@ -5,6 +5,7 @@ https://pymotw.com/3/http.server/index.html
 '''
 
 import cgi
+from do_something import append_timestamp
 from http.server import BaseHTTPRequestHandler
 import io
 
@@ -12,6 +13,7 @@ import io
 class PostHandler(BaseHTTPRequestHandler):
 
     def do_POST(self):
+        append_timestamp("time_stamps.txt")
         # Parse the form data posted
         form = cgi.FieldStorage(
             fp=self.rfile,
