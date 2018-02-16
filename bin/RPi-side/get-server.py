@@ -4,6 +4,7 @@
 https://pymotw.com/3/http.server/index.html
 '''
 
+# from doSomething import sixtyMinutes
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 
@@ -45,6 +46,6 @@ class GetHandler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     from http.server import HTTPServer
-    server = HTTPServer(('localhost', 8080), GetHandler)
+    server = HTTPServer(('', 53154), GetHandler)
     print('Starting server, use <Ctrl-C> to stop')
     server.serve_forever()
