@@ -9,10 +9,12 @@ import json
 import sys
 import requests
 
-if __name__ = "__main__":
+if __name__ == "__main__":
 
-    url = sys.argv[1]
-    port = sys.argv[2]
+    # url = sys.argv[1]
+    # port = sys.argv[2]
+    url = 'http://larmalade.getmyip.com'
+    port = '53154'
     url = url + ':' + port
 
     d = {}
@@ -24,5 +26,6 @@ if __name__ = "__main__":
             return o.__str__()
 
     payload = json.dumps(d, default=myconverter)
+    print(payload)
 
     r = requests.post(url, data=payload)
