@@ -1,4 +1,4 @@
-#!/sur/bin/python3
+#!/usr/bin/python3
 
 '''server that only handles post requests, from here:
 https://pymotw.com/3/http.server/index.html
