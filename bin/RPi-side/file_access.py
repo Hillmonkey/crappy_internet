@@ -42,7 +42,12 @@ if __name__ == "__main__":
 
     filename = 'post_server.py'
     file = open(filename, 'r')
+    '''
     for line in islice(reversed_lines(file), 10):
         print(line.rstrip('\n'))
-
+    '''
+    line = islice(reversed_lines(file), 1) # returns iterable with 1 element
+    print(next(line).rstrip('\n')) # so you only want to print once
+    # print(next(line).rstrip('\n'))
+    print(str(line))
     file.close()
