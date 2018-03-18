@@ -9,11 +9,13 @@ from do_something import append_timestamp
 from http.server import BaseHTTPRequestHandler
 import io
 
+fname = "time_stamps.txt"
+
 
 class PostHandler(BaseHTTPRequestHandler):
 
     def do_POST(self):
-        append_timestamp("time_stamps.txt")
+        append_timestamp(fname)
         # Parse the form data posted
         form = cgi.FieldStorage(
             fp=self.rfile,
